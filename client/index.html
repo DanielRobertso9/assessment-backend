@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Back End Assessment</title>
+  </head>
+
+  <body class="container">
+    <div id="radio-container">
+      <label for="compliment">
+        <input class="radio" type="radio" name="option" id="radio1" />
+        COMPLIMENT
+      </label>
+      <label for="fortune">
+        <input class="radio" type="radio" name="option" id="radio2" />
+        FORTUNE
+      </label>
+    </div>
+    <div id="function-container">
+      <div class="main" id="body-container">
+        <button id="randomButton">RANDOM</button>
+      </div>
+
+      <div class="main" id="random-container">
+        <input
+          class="input"
+          type="text"
+          id="query-input"
+          placeholder="Create your own."
+        />
+        <button id="addButton">ADD</button>
+      </div>
+
+      <div class="main" id="adjust-container">
+        <h3>
+          Index:
+          <input class="input" type="text" id="index-input" placeholder="" />
+        </h3>
+        <input
+          class="input"
+          type="text"
+          id="adjust-input"
+          placeholder="Updated Message"
+        />
+        <button id="changeButton">CHANGE</button>
+      </div>
+
+      <div class="main" id="showAll-container">
+        <button id="showAllButton">SHOW ALL</button>
+        <button id="deleteButton">DELETE</button>
+      </div>
+    </div>
+
+    <div class="response-container">
+      <div id="response"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
